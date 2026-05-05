@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury venue combining Michelin-starred dining, bespoke weddings, and private celebrations under one roof.">
+    <meta name="theme-color" content="#8B1E3F">
+    
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Timeless",
+        "description": "Luxury venue for fine dining, weddings, and private celebrations",
+        "url": "https://timeless-venue.com",
+        "telephone": "+1-555-123-4567",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1234 Luxury Avenue",
+            "addressLocality": "Metropolitan City",
+            "addressRegion": "ST",
+            "postalCode": "12345",
+            "addressCountry": "US"
+        },
+        "image": "https://timeless-venue.com/hero.jpg",
+        "priceRange": "$$$",
+        "sameAs": [
+            "https://facebook.com/timeless",
+            "https://instagram.com/timeless"
+        ]
+    }
+    </script>
+    
+    <title>Timeless - Luxury Venue for Dining, Weddings & Events</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__brand">Timeless</a>
+            </div>
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu">
+                <li><a href="index.html" class="nav__link active">Home</a></li>
+                <li><a href="restaurant.html" class="nav__link">Restaurant</a></li>
+                <li><a href="weddings.html" class="nav__link">Weddings</a></li>
+                <li><a href="parties.html" class="nav__link">Parties</a></li>
+                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero" aria-label="Hero carousel">
+        <div class="carousel">
+            <div class="carousel__slide" style="background: linear-gradient(135deg, #8B1E3F 0%, #2B2B2B 100%);">
+                <div class="carousel__content">
+                    <h1 class="carousel__headline">Where Every Occasion Becomes Timeless</h1>
+                    <p class="carousel__subheadline">Michelin-starred dining, bespoke weddings, and private celebrations — all under one roof</p>
+                    <div class="carousel__ctas">
+                        <button class="btn btn--primary" onclick="document.location='restaurant.html'">Book a Table</button>
+                        <button class="btn btn--ghost">Plan Your Event</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__slide" style="background: linear-gradient(135deg, #D4AF37 0%, #8B1E3F 100%);">
+                <div class="carousel__content">
+                    <h1 class="carousel__headline">Celebrate Life's Greatest Moments</h1>
+                    <p class="carousel__subheadline">From intimate ceremonies to grand receptions, we craft unforgettable memories</p>
+                    <div class="carousel__ctas">
+                        <button class="btn btn--primary" onclick="document.location='weddings.html'">Start Planning</button>
+                        <button class="btn btn--ghost">Explore Gallery</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__slide" style="background: linear-gradient(135deg, #2B2B2B 0%, #8B1E3F 100%);">
+                <div class="carousel__content">
+                    <h1 class="carousel__headline">Your Event, Perfected</h1>
+                    <p class="carousel__subheadline">Host corporate galas, milestone birthdays, and exclusive celebrations in luxury</p>
+                    <div class="carousel__ctas">
+                        <button class="btn btn--primary" onclick="document.location='parties.html'">Book an Event</button>
+                        <button class="btn btn--ghost">View Past Events</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel__nav carousel__nav--prev" aria-label="Previous slide"></button>
+            <button class="carousel__nav carousel__nav--next" aria-label="Next slide"></button>
+            <div class="carousel__dots"></div>
+        </div>
+    </section>
+
+    <!-- The Experience Section -->
+    <section class="section experience" aria-labelledby="experience-heading">
+        <div class="container">
+            <h2 id="experience-heading" class="section__heading">The Experience</h2>
+            <div class="grid grid--3">
+                <article class="card" data-reveal>
+                    <div class="card__image-wrapper">
+                        <div class="card__image" style="background: linear-gradient(135deg, #8B1E3F 0%, #D4AF37 100%);"></div>
+                    </div>
+                    <h3 class="card__title">Dine with Us</h3>
+                    <p class="card__text">Experience culinary excellence from our Michelin-starred chefs. Each dish is a masterpiece, crafted with the finest ingredients and innovative techniques that blend tradition with modern gastronomy.</p>
+                    <a href="restaurant.html" class="card__link">View Menus →</a>
+                </article>
+
+                <article class="card" data-reveal>
+                    <div class="card__image-wrapper">
+                        <div class="card__image" style="background: linear-gradient(135deg, #D4AF37 0%, #2B2B2B 100%);"></div>
+                    </div>
+                    <h3 class="card__title">Celebrate</h3>
+                    <p class="card__text">From intimate gatherings to lavish galas, our private party spaces offer the perfect backdrop for unforgettable celebrations. Complete with catering, entertainment, and dedicated event coordination.</p>
+                    <a href="parties.html" class="card__link">Explore Parties →</a>
+                </article>
+
+                <article class="card" data-reveal>
+                    <div class="card__image-wrapper">
+                        <div class="card__image" style="background: linear-gradient(135deg, #2B2B2B 0%, #8B1E3F 100%);"></div>
+                    </div>
+                    <h3 class="card__title">Say I Do</h3>
+                    <p class="card__text">Your wedding day deserves nothing less than perfection. Our expert team handles every detail, from ceremony setup to reception design, ensuring your love story unfolds flawlessly.</p>
+                    <a href="weddings.html" class="card__link">Start Planning →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Preview -->
+    <section class="section restaurant-preview" aria-labelledby="restaurant-heading">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-layout__image" data-reveal>
+                    <div style="width: 300px; height: 300px; background: linear-gradient(45deg, #8B1E3F, #D4AF37); border-radius: 50%; margin: 0 auto;"></div>
+                </div>
+                <div class="split-layout__content" data-reveal>
+                    <h2 id="restaurant-heading" class="section__heading">A Culinary Destination</h2>
+                    <p class="split-layout__text">Our executive chef brings 25 years of international culinary expertise to every plate. Trained in Michelin-starred kitchens across Europe and Asia, they craft seasonal menus that celebrate local sourcing and innovative techniques. Every meal is a journey through flavor, texture, and artistry.</p>
+                    <div class="split-layout__ctas">
+                        <button class="btn btn--primary" onclick="document.location='restaurant.html'">Explore Our Menus</button>
+                        <button class="btn btn--ghost">Make a Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Preview with Orbital Arcs -->
+    <section class="section wedding-preview" aria-labelledby="wedding-heading">
+        <div class="container">
+            <h2 id="wedding-heading" class="section__heading">Your Love Story, Our Stage</h2>
+            <div class="orbital-section" data-reveal>
+                <svg class="orbital-arcs" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                    <path d="M 200 200 Q 400 100, 600 200" fill="none" stroke="#D4AF37" stroke-width="1"/>
+                    <path d="M 600 200 Q 800 100, 1000 200" fill="none" stroke="#D4AF37" stroke-width="1"/>
+                </svg>
+                <div class="orbital-images">
+                    <div class="orbital-image" style="background: linear-gradient(135deg, #8B1E3F 0%, #D4AF37 100%);"></div>
+                    <div class="orbital-image" style="background: linear-gradient(135deg, #D4AF37 0%, #2B2B2B 100%);"></div>
+                    <div class="orbital-image" style="background: linear-gradient(135deg, #2B2B2B 0%, #8B1E3F 100%);"></div>
+                </div>
+            </div>
+            <div class="grid grid--3">
+                <div class="service-card" data-reveal>
+                    <h3 class="service-card__title">Ceremony & Reception</h3>
+                    <p>Elegant spaces designed for sacred vows and joyful celebrations</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <h3 class="service-card__title">Catering & Bar</h3>
+                    <p>Gourmet cuisine and curated beverage selections for refined palates</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <h3 class="service-card__title">Planning & Design</h3>
+                    <p>Complete coordination from concept to execution by expert planners</p>
+                </div>
+            </div>
+            <div class="section__cta" data-reveal>
+                <button class="btn btn--primary" onclick="document.location='weddings.html'">Schedule a Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Parties Preview -->
+    <section class="section parties-preview" aria-labelledby="parties-heading">
+        <div class="container">
+            <h2 id="parties-heading" class="section__heading">Celebrate in Style</h2>
+            <div class="masonry-grid" data-reveal>
+                <div class="masonry-item" style="background: linear-gradient(135deg, #8B1E3F 0%, #D4AF37 100%);"></div>
+                <div class="masonry-item" style="background: linear-gradient(135deg, #D4AF37 0%, #2B2B2B 100%);"></div>
+                <div class="masonry-item" style="background: linear-gradient(135deg, #2B2B2B 0%, #8B1E3F 100%);"></div>
+                <div class="masonry-item" style="background: linear-gradient(135deg, #8B1E3F 0%, #2B2B2B 100%);"></div>
+                <div class="masonry-item" style="background: linear-gradient(135deg, #D4AF37 0%, #8B1E3F 100%);"></div>
+                <div class="masonry-item" style="background: linear-gradient(135deg, #2B2B2B 0%, #D4AF37 100%);"></div>
+            </div>
+            <div class="parties-info" data-reveal>
+                <ul class="amenities-list">
+                    <li>Capacity: 50–500 guests</li>
+                    <li>State-of-the-art audio/visual systems</li>
+                    <li>Professional staging and lighting</li>
+                    <li>Full catering and bar service</li>
+                    <li>Valet parking available</li>
+                    <li>Dedicated event coordinator</li>
+                </ul>
+                <button class="btn btn--primary" onclick="document.location='parties.html'">Plan Your Event</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="section testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <h2 id="testimonials-heading" class="section__heading">Guest Stories</h2>
+            <div class="testimonial-carousel" data-reveal>
+                <div class="testimonial-slide active">
+                    <div class="testimonial__portrait" style="background: linear-gradient(135deg, #8B1E3F 0%, #D4AF37 100%);"></div>
+                    <blockquote class="testimonial__quote">
+                        <p>"Our wedding day was absolutely perfect. Every detail exceeded our expectations, and the team made us feel cherished throughout the entire process."</p>
+                        <footer class="testimonial__author">Sarah & Michael</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial__portrait" style="background: linear-gradient(135deg, #D4AF37 0%, #2B2B2B 100%);"></div>
+                    <blockquote class="testimonial__quote">
+                        <p>"The dining experience here is extraordinary. The chef's tasting menu was the finest meal I've ever had. Pure artistry on every plate."</p>
+                        <footer class="testimonial__author">James Chen</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial__portrait" style="background: linear-gradient(135deg, #2B2B2B 0%, #8B1E3F 100%);"></div>
+                    <blockquote class="testimonial__quote">
+                        <p>"We hosted our company's gala here and the venue, service, and attention to detail were impeccable. Our guests are still talking about it."</p>
+                        <footer class="testimonial__author">Victoria Wong</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testimonial-dots"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter" aria-labelledby="newsletter-heading">
+        <div class="container">
+            <h2 id="newsletter-heading" class="section__heading">Stay Inspired</h2>
+            <p class="newsletter__subtitle">Get exclusive event updates, seasonal menus, and special offers delivered to your inbox</p>
+            <form class="newsletter__form" novalidate>
+                <input type="email" placeholder="Enter your email" required aria-label="Email address" class="newsletter__input">
+                <button type="submit" class="btn btn--primary">Subscribe</button>
+            </form>
+            <div class="form-feedback" role="status" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Site footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__title">Timeless</h3>
+                    <p class="footer__text">Luxury venue for fine dining, weddings, and private celebrations. Where every moment becomes timeless.</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="parties.html">Private Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Contact</h4>
+                    <ul class="footer__info">
+                        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                        <li><a href="mailto:info@timeless.com">info@timeless.com</a></li>
+                        <li>1234 Luxury Avenue<br>Metropolitan City, ST 12345</li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Hours</h4>
+                    <ul class="footer__hours">
+                        <li>Monday – Thursday: 5pm – 11pm</li>
+                        <li>Friday – Saturday: 5pm – 12am</li>
+                        <li>Sunday: 5pm – 10pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__socials">
+                    <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                </div>
+                <p class="footer__copyright">&copy; 2024 Timeless. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>
